@@ -11,7 +11,7 @@ export default function ContactStarter() {
         {/* TITLU SECȚIUNE */}
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold text-gray-900 mb-4">
-            Găsește-ne <span className="text-amber-700">în Deva</span>
+            Ne găsești <span className="text-amber-700">în Deva</span>
           </h2>
           <p className="text-xl text-gray-600">Vino să ne vizitezi — te așteptăm cu o cafea caldă</p>
         </div>

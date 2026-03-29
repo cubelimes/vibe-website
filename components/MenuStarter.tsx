@@ -15,7 +15,7 @@ const menuData = {
     { name: 'Flat White', price: 17, description: 'Microfoam mătăsos peste espresso', image: 'https://images.unsplash.com/photo-1574914629385-46448b767aec?w=600&auto=format&fit=crop&q=80' },
     { name: 'Latte', price: 17, description: 'Espresso cu lapte abundent', image: 'https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600&auto=format&fit=crop&q=80' },
   ],
-  Specialty: [
+  Speciale: [
     { name: 'Matcha Latte', price: 19, description: 'Ceai matcha japonez cu lapte cremos', image: 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&auto=format&fit=crop&q=80' },
     { name: 'Turmeric Latte', price: 18, description: 'Lapte auriu cu turmeric și scorțișoară', image: 'https://images.unsplash.com/photo-1597792503334-92af8c97890b?w=600&auto=format&fit=crop&q=80' },
     { name: 'Cortado', price: 15, description: 'Espresso cu lapte în proporții egale', image: 'https://images.unsplash.com/photo-1519532059956-a63a37af5deb?w=600&auto=format&fit=crop&q=80' },
@@ -23,7 +23,7 @@ const menuData = {
     { name: 'AeroPress', price: 18, description: 'Extracție lentă, gust curat și pur', image: 'https://images.unsplash.com/photo-1712664436444-746b20ec5d8f?w=600&auto=format&fit=crop&q=80' },
     { name: 'Cold Latte', price: 19, description: 'Espresso răcit cu lapte și gheață', image: 'https://images.unsplash.com/photo-1653122025505-eb23942cf527?w=600&auto=format&fit=crop&q=80' },
   ],
-  'Cold Brew': [
+  Racoritoare: [
     { name: 'Cold Classic', price: 16, description: 'Infuzie la rece 24h, gust fin și răcoritor', image: 'https://images.unsplash.com/photo-1495221521568-8b714b2cb6fd?w=600&auto=format&fit=crop&q=80' },
     { name: 'Cold Brew Tonic', price: 18, description: 'Cold brew cu apă tonică și lămâie', image: 'https://images.unsplash.com/photo-1596323855852-6c6201ab1e9a?w=600&auto=format&fit=crop&q=80' },
     { name: 'Nitro Cold Brew', price: 20, description: 'Cold brew cu azot, textură cremoasă', image: 'https://images.unsplash.com/photo-1527156231393-7023794f363c?w=600&auto=format&fit=crop&q=80' },
@@ -41,7 +41,7 @@ const menuData = {
 };
 
 type Category = keyof typeof menuData;
-const categories: Category[] = ['Espresso', 'Specialty', 'Cold Brew', 'Patiserie'];
+const categories: Category[] = ['Espresso', 'Speciale', 'Racoritoare', 'Patiserie'];
 
 export default function MenuStarter() {
   const [activeTab, setActiveTab] = useState<Category>('Espresso');

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import NavbarStarter from "@/components/NavbarStarter";
 
 // 🎨 TIPOGRAFIE 100% SANS-SERIF - MODERN CLEAN
 // Plus Jakarta Sans - Sans-serif modern pentru TOATE titlurile (H1-H6)
@@ -63,6 +64,7 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${inter.variable} antialiased`}
       >
+        <NavbarStarter />
         {children}
       </body>
     </html>

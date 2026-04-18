@@ -277,20 +277,19 @@ export default function ChatWidget() {
         {isOpen ? '×' : (
         <span className="relative flex items-center justify-center w-full h-full">
           <span className="text-2xl">☕</span>
-          {/* Bulă de mesaj care iese din cerc în colțul dreapta sus */}
+          {/* Bulă de mesaj cu codiță */}
           <span
-            className="absolute flex items-center justify-center rounded-full shadow-md"
-            style={{
-              top: '-4px',
-              right: '-4px',
-              width: '20px',
-              height: '20px',
-              background: '#fff',
-              border: `2px solid ${PRIMARY}`,
-            }}
+            className="absolute shadow-md"
+            style={{ top: '-10px', right: '-10px', width: '28px', height: '28px' }}
           >
-            <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
-              <path d="M1 1.5C1 1.22 1.22 1 1.5 1h9C10.78 1 11 1.22 11 1.5v6c0 .28-.22.5-.5.5H7L5 10V8H1.5C1.22 8 1 7.78 1 7.5v-6z" fill={PRIMARY}/>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Bula */}
+              <rect x="0" y="0" width="24" height="20" rx="5" fill={PRIMARY}/>
+              {/* Codiță stânga jos */}
+              <path d="M6 20 L2 26 L12 20Z" fill={PRIMARY}/>
+              {/* Linii text */}
+              <line x1="5" y1="7" x2="19" y2="7" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+              <line x1="5" y1="13" x2="15" y2="13" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
             </svg>
           </span>
         </span>

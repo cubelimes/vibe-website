@@ -72,7 +72,7 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: 'Bună ziua! Sunt Vibo, barista-ul tău virtual de la Vibe Coffee. Cum te pot ajuta? ☕',
+      content: 'Salut! Sunt Vibo, barista-ul tău virtual de la Vibe Coffee. Cum te pot ajuta? ☕',
     },
   ]);
   const [input, setInput] = useState('');
